@@ -1,0 +1,28 @@
+<html>
+    <head>
+      @vite('resources/css/app.css')
+    </head>
+    <body class='flex flex-col items-center'>
+    <div class='flex flex-col border-2 border-blue-400 rounded-xl py-5 px-8 mt-20'>
+        <h1 class='font-bold text-center text-xl'>Crear usuario</h1>
+        <form action='/upload-user'>
+            <span class='flex flex-col'>
+                <p>Nombre</p>
+                <input name='name'/>
+            </span>
+            <span class='flex flex-col'>
+                <p>Correo</p>
+                <input name='email'/>
+            </span>
+            <span class='flex flex-col'>
+                <input type='file' name='img'/>
+            </span>
+            <span class='flex flex-col'>
+                <p>Contraseña</p>
+                <input name='passwd'/>
+            </span>
+            <button>Crear</button>
+        </form>
+    </div>
+    </body>
+</html>
