@@ -22,7 +22,10 @@
             <span class='flex flex-col mt-3'>
                 <input type='file' name='img'/>
             </span>
-            <button type='submit' class='py-2 px-4 mt-5 bg-blue-400 font-bold text-lg rounded-lg'>Crear</button>
+            <div class='w-full flex justify-around'>
+                <button type='submit' class='py-2 px-4 mt-5 bg-blue-400 font-bold text-lg rounded-lg'>Crear</button>
+                <a href='/' class='py-2 px-4 mt-5 bg-red-400 font-bold text-lg rounded-lg'>Volver</a>
+            </div>
         </form>
     </div>
     </body>

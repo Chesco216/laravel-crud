@@ -14,10 +14,11 @@ Route::post('/subir-persona', [PersonaController::class, 'subir_persona']);
 
 Route::get('/lista-personas', [PersonaController::class, 'listar_personas']);
 
-Route::get('/actualizar-persona', function () {
+Route::get('/actualizar', function () {
     return view('update_user');
 });
 
+Route::post('/actualizar-persona', [PersonaController::class, 'actualizar_persona']);
 
 Route::get('/eliminar-persona', function () {
     return view('delete_user');
