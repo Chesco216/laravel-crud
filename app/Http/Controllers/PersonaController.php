@@ -44,11 +44,11 @@ class PersonaController extends Controller
 
 
         // FIX: is not working idk why i have no internet btw
-        DB::transaction(function () {
-            DB::update('update personas set name = '. $data['name'] .' where name = '. $id .'');
-            DB::update('update personas set email = '. $data['email'] .' where name = '. $id .'');
-            DB::update('update personas set img = '. $data['img'] .' where name = '. $id .'');
-        }, 3);
+        /*DB::transaction(function () {*/
+        /*    DB::update('update personas set name = '. $data['name'] .' where name = '. $id .'');*/
+        /*    DB::update('update personas set email = '. $data['email'] .' where name = '. $id .'');*/
+        /*    DB::update('update personas set img = '. $data['img'] .' where name = '. $id .'');*/
+        /*}, 3);*/
 
         return redirect('/');
     }

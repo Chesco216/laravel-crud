@@ -13,4 +13,4 @@
         <a class='w-full text-center py-2 px-4 bg-blue-400 rounded-lg mb-5' href='/eliminar-persona' method='GET'>Eliminar usuarios</a>
     </div>
 </body>
-</html
+</html>

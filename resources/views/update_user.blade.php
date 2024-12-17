@@ -1,4 +1,3 @@
-
 <html>
     <head>
       @vite('resources/css/app.css')
@@ -8,6 +7,7 @@
         <h1 class='font-bold text-center text-xl'>Crear usuario</h1>
         <form class='flex flex-col items-center' action='/actualizar-persona' method='POST' enctype='multipart/form-data'>
             @csrf
+            @method('PUT')
             <span class='w-full flex flex-row items-center mt-5'>
                 <p class='font-semibold text-md mb-3 mr-5'>Id del usuario:</p>
                 <input class='border-2 py-2 px-3 rounded-md mb-2' placeholder='id' name='id'/>
